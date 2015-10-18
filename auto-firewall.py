@@ -3,7 +3,6 @@
 # To use, output nmap to a file and enter the file name as the only argument.
 
 import sys
-import re
 import subprocess
 import os
 
