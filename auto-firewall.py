@@ -4,11 +4,18 @@
 
 import sys
 import subprocess
-import os
 
 file = sys.argv[1]
 protocol = sys.argv[2]
 
+#if len(sys.argv)  < 2:
+#  exit('Incorrect number of parameters')
+
+
+
+
+if protocol is not 'tcp' or not 'udp':
+  exit('incorrect protocol specified')
 
 for line in open(file):
   if "open" in line:
